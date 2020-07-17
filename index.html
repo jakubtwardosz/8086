@@ -11,63 +11,121 @@
     <title>Hello, world!</title>
   </head>
   <body>
+
     <div class="container">
         <div class="py-5 text-center">
-            <h2>8086 MOV simulator</h2>
-            <p>Projekt przygotowany przez Jakuba Twaradosza na zajęcia "Architektura systemów komputerowych"</p>
+            <img class="d-block mx-auto mb-4" src="./assets/processor.png" alt="8085 icon" width="256" height="256">
+            <h1>8086 MOV simulator</h1>
+            <p>Projekt przygotowany przez na zajęcia "Architektura systemów komputerowych"</p>
+            <p>Autor: Jakub Twaradosz</p>
         </div>
         
-        <form>
-            <h3 class="py-2">Data Registers</h3>
-            <div class="row">              
+        <form>            
+            <div class="row">
+                <div class="col-12"><h3 class="py-2">Data Registers</h3></div>                            
               <div class="col">
+                <label for="AX">AX</label>
                 <input id="AX" type="text" class="form-control" placeholder="AX">
               </div>
               <div class="col">
+                <label for="BX">BX</label>
                 <input id="BX" type="text" class="form-control" placeholder="BX">
               </div>
               <div class="col">
+                <label for="CX">CX</label>
                 <input id="CX" type="text" class="form-control" placeholder="CX">
               </div>
               <div class="col">
+                <label for="DX">DX</label>  
                 <input id="DX" type="text" class="form-control" placeholder="DX">
-              </div>
+              </div>              
             </div>
 
-            <h3 class="py-2">MOV Instruction</h3>
-            <div class="row">              
+            <div class="row mt-2">                          
+              <div class="col">
+                <label for="AH">AH</label>
+                <input id="AH" type="text" class="form-control" placeholder="AH">
+              </div>
+              <div class="col">
+                <label for="AL">AL</label>
+                <input id="AL" type="text" class="form-control" placeholder="AL">
+              </div>
+              <div class="col">
+                <label for="BH">BH</label>
+                <input id="BH" type="text" class="form-control" placeholder="BH">
+              </div>
+              <div class="col">
+                <label for="BL">BL</label>  
+                <input id="BL" type="text" class="form-control" placeholder="BL">
+              </div>
+              <div class="col">
+                <label for="CH">CH</label>
+                <input id="CH" type="text" class="form-control" placeholder="CH">
+              </div>
+              <div class="col">
+                <label for="CL">CL</label>
+                <input id="CL" type="text" class="form-control" placeholder="CL">
+              </div>
+              <div class="col">
+                <label for="DH">DH</label>
+                <input id="DH" type="text" class="form-control" placeholder="DH">
+              </div>
+              <div class="col">
+                <label for="DL">DL</label>  
+                <input id="DL" type="text" class="form-control" placeholder="DL">
+              </div>                 
+            </div>
+
+            
+            <div class="row mt-3">
+                <div class="col-12"><h3 class="py-2">MOV Instruction</h3></div>
+                             
                 <div class="col">
+                    <label for="destinationSelect">Destination</label>
                     <select class="custom-select mr-sm-2" id="destinationSelect">
                         <option selected>Destination...</option>
                         <option value="AX">AX</option>
+                        <option value="AH">AH</option>
+                        <option value="AL">AL</option>
                         <option value="BX">BX</option>
+                        <option value="BH">BH</option>
+                        <option value="BL">BL</option>
                         <option value="CX">CX</option>
+                        <option value="CH">CH</option>
+                        <option value="CL">CL</option>
                         <option value="DX">DX</option>
+                        <option value="DH">DH</option>
+                        <option value="DL">DL</option>
                     </select>
                 </div>
                 <div class="col">
+                    <label for="sourceSelect">Source</label>
                     <select class="custom-select mr-sm-2" id="sourceSelect">
                         <option selected>Source...</option>
                         <option value="AX">AX</option>
+                        <option value="AH">AH</option>
+                        <option value="AL">AL</option>
                         <option value="BX">BX</option>
+                        <option value="BH">BH</option>
+                        <option value="BL">BL</option>
                         <option value="CX">CX</option>
+                        <option value="CH">CH</option>
+                        <option value="CL">CL</option>
                         <option value="DX">DX</option>
+                        <option value="DH">DH</option>
+                        <option value="DL">DL</option>
                     </select>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mt-4 mb-4">
                 <div class="col">
-                    <button type="button" class="btn btn-primary mt-sm-2" id="movButton">MOV</button>
+                    <button type="button" class="btn btn-primary" id="movButton">MOV</button>
                 </div>
             </div>
         </form>
 
 
-    </div> 
-    
-
-
-
+    </div>
 
     <!-- Optional JavaScript -->
     <script src="./scripts/script.js"></script>

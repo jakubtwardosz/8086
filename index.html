@@ -21,38 +21,43 @@
             <h3 class="py-2">Data Registers</h3>
             <div class="row">              
               <div class="col">
-                <input type="text" class="form-control" placeholder="AX">
+                <input id="AX" type="text" class="form-control" placeholder="AX">
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="BX">
+                <input id="BX" type="text" class="form-control" placeholder="BX">
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="CX">
+                <input id="CX" type="text" class="form-control" placeholder="CX">
               </div>
               <div class="col">
-                <input type="text" class="form-control" placeholder="DX">
+                <input id="DX" type="text" class="form-control" placeholder="DX">
               </div>
             </div>
 
             <h3 class="py-2">MOV Instruction</h3>
             <div class="row">              
                 <div class="col">
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <select class="custom-select mr-sm-2" id="destinationSelect">
                         <option selected>Destination...</option>
-                        <option value="1">AX</option>
-                        <option value="2">BX</option>
-                        <option value="3">CX</option>
-                        <option value="3">DX</option>
+                        <option value="AX">AX</option>
+                        <option value="BX">BX</option>
+                        <option value="CX">CX</option>
+                        <option value="DX">DX</option>
                     </select>
                 </div>
                 <div class="col">
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <select class="custom-select mr-sm-2" id="sourceSelect">
                         <option selected>Source...</option>
-                        <option value="1">AX</option>
-                        <option value="2">BX</option>
-                        <option value="3">CX</option>
-                        <option value="3">DX</option>
+                        <option value="AX">AX</option>
+                        <option value="BX">BX</option>
+                        <option value="CX">CX</option>
+                        <option value="DX">DX</option>
                     </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn btn-primary mt-sm-2" id="movButton">MOV</button>
                 </div>
             </div>
         </form>

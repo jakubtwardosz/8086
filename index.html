@@ -11,11 +11,59 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>8086 MOV simulator</h2>
+            <p>Projekt przygotowany przez Jakuba Twaradosza na zajęcia "Architektura systemów komputerowych"</p>
+        </div>
+        
+        <form>
+            <h3 class="py-2">Data Registers</h3>
+            <div class="row">              
+              <div class="col">
+                <input type="text" class="form-control" placeholder="AX">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="BX">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="CX">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="DX">
+              </div>
+            </div>
+
+            <h3 class="py-2">MOV Instruction</h3>
+            <div class="row">              
+                <div class="col">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Destination...</option>
+                        <option value="1">AX</option>
+                        <option value="2">BX</option>
+                        <option value="3">CX</option>
+                        <option value="3">DX</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Source...</option>
+                        <option value="1">AX</option>
+                        <option value="2">BX</option>
+                        <option value="3">CX</option>
+                        <option value="3">DX</option>
+                    </select>
+                </div>
+            </div>
+        </form>
 
 
-
+    </div> 
     
+
+
+
+
     <!-- Optional JavaScript -->
     <script src="./scripts/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
